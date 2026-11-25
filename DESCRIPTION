@@ -1,0 +1,40 @@
+Package: revmix
+Type: Package
+Title: Mixture Graded Response Models for Misreading of Reverse-Worded Items
+Version: 0.1.0
+Authors@R: c(
+    person("Budiyono", "Budiyono", role = "aut",
+           comment = c(ORCID = "0000-0003-2940-1185")),
+    person("Anik", "Ghufron", role = "aut",
+           comment = c(ORCID = "0000-0001-6711-3606")),
+    person("Arif", "Rohman", role = "aut",
+           comment = c(ORCID = "0000-0002-1557-9479")),
+    person("Sumin", "Sumin", role = "aut",
+           comment = c(ORCID = "0000-0001-5410-7522")),
+    person("Rachmad Agung", "Prayogi", role = "aut",
+           comment = c(ORCID = "0009-0001-7358-5527")),
+    person("Tri Zahra", "Ningsih", email = "trizahra10019@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-2544-9627")),
+    person("Abdul", "Aziz", role = "aut"))
+Description: Estimates two-class mixture graded response models for rating
+    scales that mix positively and negatively worded items. Respondents in an
+    inconsistent class may misread each reverse-worded item with an
+    item-specific probability, which can be fixed to one (the ordinal analogue
+    of the constrained factor mixture model of Steinmann, Strietholt, and
+    Braeken, 2022 <doi:10.1037/met0000392>), estimated freely, or explained by
+    item characteristics. Class membership is regressed on person covariates
+    such as reading proficiency in the same estimation step, with support for
+    plausible values, sampling weights, and cluster-robust standard errors.
+    Estimation is by marginal maximum likelihood with an EM algorithm.
+    Tools for model comparison, parametric bootstrap likelihood-ratio tests,
+    person-level classification, and simulation are included.
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 4.1.0)
+Imports: stats, MASS
+Suggests: testthat (>= 3.0.0), haven, mirt
+Config/testthat/edition: 3
+RoxygenNote: 7.3.1
+URL: https://github.com/budiyono-2022/revmix
+BugReports: https://github.com/budiyono-2022/revmix/issues
